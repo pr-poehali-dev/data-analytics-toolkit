@@ -31,8 +31,8 @@ export default function Hero() {
         <div className="absolute inset-0">
           <GodRays
             colorBack="#00000000"
-            colors={["#FFFFFF6E", "#F3F3F3F0", "#8A8A8A", "#989898"]}
-            colorBloom="#FFFFFF"
+            colors={["#A8D8EA6E", "#F6D860F0", "#3A9FBF", "#1B6CA8"]}
+            colorBloom="#F6D860"
             offsetX={0.85}
             offsetY={-1}
             intensity={1}
@@ -55,12 +55,16 @@ export default function Hero() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center gap-4 sm:gap-6 text-center">
+          <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.2em] text-[#1B6CA8] mix-blend-multiply">
+            Французская парфюмерия
+          </p>
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[90%] tracking-[-0.03em] text-black mix-blend-exclusion max-w-2xl">
-            Ускорьте ваш маркетинг
+            MARSO — это не просто ароматы
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-[160%] text-black max-w-2xl px-4">
-            Дайте вашей команде свободу творить, а не настраивать. Создавайте, запускайте и масштабируйте цифровые продукты с уверенностью и скоростью.
+            Свежесть океана и тепло солнечных лучей в каждом флаконе. Только французские компоненты высокого качества — парфюм, который окутывает, как лёгкий бриз.
           </p>
 
           <AnimatePresence initial={false}>
@@ -72,7 +76,7 @@ export default function Hero() {
                   }}
                   layout
                   layoutId="cta-card"
-                  className="absolute inset-0 bg-[#004FE5] items-center justify-center transform-gpu will-change-transform"
+                  className="absolute inset-0 bg-[#1B6CA8] items-center justify-center transform-gpu will-change-transform"
                 ></motion.div>
                 <motion.button
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -81,9 +85,9 @@ export default function Hero() {
                   exit={{ opacity: 0, scale: 0.8 }}
                   layout={false}
                   onClick={handleExpand}
-                  className="h-15 px-6 sm:px-8 py-3 text-lg sm:text-xl font-regular text-[#E3E3E3] tracking-[-0.01em] relative"
+                  className="h-15 px-6 sm:px-8 py-3 text-lg sm:text-xl font-regular text-[#F6F0E4] tracking-[-0.01em] relative"
                 >
-                  Запросить демо
+                  Получить аромат
                 </motion.button>
               </motion.div>
             )}
@@ -101,7 +105,7 @@ export default function Hero() {
                 borderRadius: "24px",
               }}
               layout
-              className="relative flex h-full w-full overflow-y-auto bg-[#004FE5] transform-gpu will-change-transform"
+              className="relative flex h-full w-full overflow-y-auto bg-[#1B6CA8] transform-gpu will-change-transform"
             >
               <motion.div
                 initial={{ opacity: 0, scale: 2 }}
@@ -116,7 +120,7 @@ export default function Hero() {
               >
                 <MeshGradient
                   speed={1}
-                  colors={["#2452F1", "#022474", "#163DB9", "#0B1D99"]}
+                  colors={["#1B6CA8", "#0D4F82", "#3A9FBF", "#0A3A5C"]}
                   distortion={0.8}
                   swirl={0.1}
                   grainMixer={0}
@@ -133,7 +137,7 @@ export default function Hero() {
               >
                 <div className="flex-1 flex flex-col justify-center space-y-3 w-full">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-none tracking-[-0.03em]">
-                    Связаться с нами
+                    Почувствуйте MARSO
                   </h2>
 
                   <div className="space-y-4 sm:space-y-6 pt-4">
@@ -150,7 +154,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Узнайте, как FlowPulse может трансформировать ваш бизнес с индивидуальными решениями и гибкими тарифами.
+                          Ароматы из французских компонентов высшего качества — каждый флакон создан с вниманием к деталям и страстью к совершенству.
                         </p>
                       </div>
                     </div>
@@ -172,7 +176,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Убедитесь лично, как платформа FlowPulse ускоряет разработку и приносит результаты.
+                          Океанская свежесть и солнечное тепло — парфюм, который дарит уверенность и оставляет незабываемый след.
                         </p>
                       </div>
                     </div>
@@ -180,17 +184,15 @@ export default function Hero() {
 
                   <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20">
                     <p className="text-lg sm:text-xl lg:text-2xl text-white leading-[150%] mb-4">
-                      FlowPulse позволяет нашей команде работать быстрее и выпускать продукты с уверенностью.
+                      MARSO — это стремление к жизни. Аромат, который рассказывает историю о море, солнце и свободе.
                     </p>
                     <div className="flex items-center gap-3 sm:gap-4">
-                      <img
-                        src="https://cdn.poehali.dev/templates/fluid-cta-ru/anna-avatar.jpg"
-                        alt="Анна Смирнова"
-                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
-                      />
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white font-medium text-lg">
+                        M
+                      </div>
                       <div>
-                        <p className="text-base sm:text-lg lg:text-xl text-white">Анна Смирнова</p>
-                        <p className="text-sm sm:text-base text-white/70">Директор по маркетингу, TechVision</p>
+                        <p className="text-base sm:text-lg lg:text-xl text-white">Команда MARSO</p>
+                        <p className="text-sm sm:text-base text-white/70">Французская парфюмерия</p>
                       </div>
                     </div>
                   </div>
@@ -204,58 +206,61 @@ export default function Hero() {
                         htmlFor="name"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        ПОЛНОЕ ИМЯ *
+                        ВАШЕ ИМЯ *
                       </label>
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
+                        placeholder="Как к вам обращаться?"
+                        className="w-full px-4 py-2.5 rounded-lg bg-[#0D4F82] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                       />
                     </div>
 
-                    {/* Work Email Field */}
+                    {/* Email Field */}
                     <div>
                       <label
                         htmlFor="email"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        РАБОЧИЙ EMAIL *
+                        EMAIL *
                       </label>
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
+                        placeholder="your@email.com"
+                        className="w-full px-4 py-2.5 rounded-lg bg-[#0D4F82] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                       />
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
                       <div className="flex-1">
                         <label
-                          htmlFor="website"
+                          htmlFor="phone"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          САЙТ КОМПАНИИ
+                          ТЕЛЕФОН
                         </label>
                         <input
-                          type="url"
-                          id="website"
-                          name="website"
-                          className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          placeholder="+7 (___) ___-__-__"
+                          className="w-full px-4 py-2.5 rounded-lg bg-[#0D4F82] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                         />
                       </div>
-                      <div className="sm:w-32 w-full">
+                      <div className="sm:w-40 w-full">
                         <label
-                          htmlFor="company-size"
+                          htmlFor="aroma-type"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          РАЗМЕР
+                          АРОМАТ
                         </label>
                         <select
-                          id="company-size"
-                          name="company-size"
-                          className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white focus:outline-none focus:ring-2 focus:ring-white/20 transition-all appearance-none cursor-pointer text-sm h-10"
+                          id="aroma-type"
+                          name="aroma-type"
+                          className="w-full px-4 py-2.5 rounded-lg bg-[#0D4F82] border-0 text-white focus:outline-none focus:ring-2 focus:ring-white/20 transition-all appearance-none cursor-pointer text-sm h-10"
                           style={{
                             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
                             backgroundRepeat: "no-repeat",
@@ -263,11 +268,10 @@ export default function Hero() {
                             backgroundSize: "1rem",
                           }}
                         >
-                          <option value="1-10">1-10</option>
-                          <option value="11-50">11-50</option>
-                          <option value="51-200">51-200</option>
-                          <option value="201-500">201-500</option>
-                          <option value="501+">501+</option>
+                          <option value="ocean">Океан</option>
+                          <option value="sun">Солнечный</option>
+                          <option value="breeze">Бриз</option>
+                          <option value="all">Все линейки</option>
                         </select>
                       </div>
                     </div>
@@ -278,22 +282,23 @@ export default function Hero() {
                         htmlFor="message"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        КОММЕНТАРИЙ
+                        ПОЖЕЛАНИЯ
                       </label>
                       <textarea
                         id="message"
                         name="message"
                         rows={3}
-                        className="w-full px-4 py-3 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all resize-none text-sm"
+                        placeholder="Расскажите о предпочтениях в ароматах..."
+                        className="w-full px-4 py-3 rounded-lg bg-[#0D4F82] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all resize-none text-sm"
                       />
                     </div>
 
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full px-8 py-2.5 rounded-full bg-white text-[#0041C1] font-medium hover:bg-white/90 transition-colors tracking-[-0.03em] h-10"
+                      className="w-full px-8 py-2.5 rounded-full bg-[#F6D860] text-[#0A3A5C] font-medium hover:bg-[#F6D860]/90 transition-colors tracking-[-0.03em] h-10"
                     >
-                      Отправить
+                      Узнать об аромате
                     </button>
                   </form>
                 </div>
