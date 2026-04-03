@@ -31,8 +31,8 @@ export default function Hero() {
         <div className="absolute inset-0">
           <GodRays
             colorBack="#00000000"
-            colors={["#A8D8EA6E", "#F6D860F0", "#3A9FBF", "#1B6CA8"]}
-            colorBloom="#F6D860"
+            colors={["#00CED16E", "#40E0D0F0", "#00B5B8", "#007C80"]}
+            colorBloom="#40E0D0"
             offsetX={0.85}
             offsetY={-1}
             intensity={1}
@@ -268,10 +268,9 @@ export default function Hero() {
                             backgroundSize: "1rem",
                           }}
                         >
-                          <option value="ocean">Океан</option>
-                          <option value="sun">Солнечный</option>
-                          <option value="breeze">Бриз</option>
-                          <option value="all">Все линейки</option>
+                          <option value="women">Женские</option>
+                          <option value="men">Мужские</option>
+                          <option value="unisex">Унисекс</option>
                         </select>
                       </div>
                     </div>
